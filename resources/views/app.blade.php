@@ -30,12 +30,15 @@
                     </div>
 
                     <div class="weather" style="display:none;">
-                        <span class="cidade"></span><br>
-                        <span class="temperatura"></span><br>
-                        <span class="descricao"></span><br>
-                        Nascer do Sol: <span class="nascer_do_sol"></span> - Pôr do Sol: <span class="por_do_sol"></span><br>
-                        Velocidade do vento: <span class="vento"></span><br>
-                        <img src="imagens/44.png" class="imagem-do-tempo"><br>
+                        <div class="weather-title">
+                            <span class="cidade"></span><span class="temperatura"></span><br>
+                            <span class="descricao"></span><br>
+                        </div>
+                        <div class="weather-details">
+                            Nascer do Sol: <span class="nascer_do_sol"></span> - Pôr do Sol: <span class="por_do_sol"></span><br>
+                            Velocidade do vento: <span class="vento"></span><br>
+                        </div>
+                        <img class="imagem-do-tempo"><br>
                         <a href="#" class="obter-localizacao">Obter localização</a>
                     </div>
 
@@ -77,7 +80,6 @@
                 // Insere os dados no HTML
                 $.each(dados, function(dado, valor){
                     $('.'+dado).text(valor);
-                    console.log(valor);
                 });
                 // Insere a imagem
                 $('.imagem-do-tempo').attr('src', dados.imagem);
