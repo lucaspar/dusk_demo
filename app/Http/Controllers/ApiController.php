@@ -29,14 +29,14 @@ class ApiController extends Controller
 
         // Formata dos dados recebidos
         echo json_encode(array(
-                'temperatura'   => $dados->results->temp.' ºC',
-                'umidade'       => $dados->results->humidity.' %',
+                'temperatura'   => $dados->results->temp.'ºC',
+                'umidade'       => $dados->results->humidity.'%',
                 'descricao'     => $dados->results->description,
                 'cidade'        => $dados->results->city,
                 'nascer_do_sol' => $dados->results->sunrise,
                 'por_do_sol'    => $dados->results->sunset,
                 'vento'         => $dados->results->wind_speedy,
-                'imagem'        => 'https://assets.hgbrasil.com/weather/imagens/'.$dados->results->img_id.'.png',
+                'imagem'        => '/images/weather/'.$dados->results->img_id.'.png',
             ));
     }
 

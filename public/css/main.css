@@ -1,0 +1,108 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+}
+.full-height {
+    height: 100vh;
+}
+.full-width {
+    margin: 0;
+    width: 100%;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.position-ref {
+    position: relative;
+}
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.content {
+    text-align: center;
+}
+.title {
+    font-size: 84px;
+    text-shadow: 1px 1px 2px #ddd;
+}
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.m-b-md {
+    margin-bottom: 30px;
+}
+#wrapper{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#featured {
+    position: absolute;
+    width: calc(100vh * (1280 / 720));    /*  video width / height  */
+    height: calc(100vw * (720 / 1280));   /*  video height / width  */
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#map {
+    width: 100%;
+    height: 350px;
+    margin: 2em 0;
+    min-height: 250px;
+}
+.clear {
+    clear: both;
+}
+.page-title {
+    font-size: 36px;
+}
+.cidade {
+    font-size: 32px;
+}
+.temperatura {
+    font-size: 38px;
+}
+.descricao {
+    font-size: 24px;
+}
+.imagem-do-tempo {
+    float: right;
+}
+.weather-icon {
+    margin: 0 10px;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    max-height: 40px;
+}
