@@ -14,5 +14,6 @@
 Auth::routes();
 
 
+Route::get('/home', 'HomeController@home');
 Route::get('/app',  'HomeController@app')  ->name('app');
 Route::get('/',     'HomeController@home') ->name('home');

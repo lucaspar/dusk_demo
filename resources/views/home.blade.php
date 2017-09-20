@@ -41,6 +41,11 @@
                 <div class="title m-b-md">
                     {{ config('app.name', 'Dusk Tester') }}
                 </div>
+                <h2 style="color: #fff;">
+                    @auth
+                        Olá {{ Auth::user()->name}}!
+                    @endauth
+                </h2>
             </div>
         </div>
 
