@@ -21,6 +21,8 @@ class CurrentWeatherTest extends DuskTestCase
             // autentica-se
             $browser->loginAs(User::find(1))
 
+                ->pause(5000)
+
                 // visita página e aguarda previsão carregar
                 ->visit('/app')
                 ->waitUntilMissing('.loader')

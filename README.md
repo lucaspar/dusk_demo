@@ -11,7 +11,7 @@ Aplicação web simples para demonstração do Laravel Dusk
 - MySQL
 - PHP >= 7.0
 - Composer
-- Laravel
+- Laravel >= 5.4
 
 ## Execução da aplicação
 

@@ -26,10 +26,12 @@ class UserRegistrationTest extends DuskTestCase
         // navega até página de registro e cria usuário
         $this->browse(function (Browser $browser) use ($user) {
 
-            $delay          = 0;
+            $delay          = 2000;
             $final_delay    = 2000;
 
             $browser->visit('/')
+
+                    ->pause(5000)
 
                     // navega para a criação de usuário
                     ->clickLink('Registrar')
